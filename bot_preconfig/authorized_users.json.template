@@ -1,0 +1,34 @@
+{
+    "authorized_users": [
+      {
+        "user_id": "XXXX",
+        "relationship": "哥哥"
+      },
+      {
+        "user_id": "XXXX",
+        "relationship": "弟弟"
+      },
+      {
+        "user_id": "XXXXX",
+        "relationship": "媽媽"
+      },
+      {
+        "user_id": "",
+        "relationship": "娃娃"
+      },
+      {
+        "user_id": "",
+        "relationship": "姐姐"
+      },
+      {
+        "user_id": "",
+        "relationship": "爸爸"
+      }
+    ],
+    "authorized_groups": [
+      "XXXX",
+      "XXXX",
+      "XXXX"
+    ]
+  }
+  

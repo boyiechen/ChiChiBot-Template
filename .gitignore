@@ -167,6 +167,5 @@ cython_debug/
 _demo_*.py
 test.json
 test*.py
-app/static/*
 app/img_upload
 app/AzureAPI/output/*

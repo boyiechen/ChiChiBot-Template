@@ -49,6 +49,7 @@ class Sticker(object):
 
         if stickerNO == "13":
             text = "派出我的跟班可魯\n" + text
+            textColor = (0, 0, 0) # else black
         else:
             textColor = (0, 0, 0) # else black
 
@@ -69,15 +70,15 @@ class Sticker(object):
         y = self.positionDict[stickerNO][1]
 
         # load font and choose font size
-        myFont = ImageFont.truetype("./app/AzureAPI/NotoSansTC-Regular.otf", fontsize)
+        myFont = ImageFont.truetype("./app/static/font/NotoSansTC-Regular.otf", fontsize)
 
         # draw img
-        img = Image.open(f"./app/stickers/{stickerNO}.png")
+        img = Image.open(f"./app/static/stickers/{stickerNO}.png")
         I1 = ImageDraw.Draw(img)
         I1.text((x, y), f"{text}", fill = textColor, font = myFont)
 
         # save
-        img.save("./app/stickers/stickerSent.png")
+        img.save("./app/static/stickers/stickerSent.png")
 
 sticker = Sticker()
 
